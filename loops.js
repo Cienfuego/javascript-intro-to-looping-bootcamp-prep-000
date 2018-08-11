@@ -19,14 +19,15 @@ function whileLoop(n){
 }
 
 function doWhileLoop(array){
-  var i = 0;
- 
+
   function incrementVariable() {
     i = i + 1;
+    var i = 0;
   }
  
   do {
-    array.pop();
+    console.log(1)
+    array.pop()
     incrementVariable();
   } while (array.length > 0 && incrementVariable());
-  }return array; 
+  }
